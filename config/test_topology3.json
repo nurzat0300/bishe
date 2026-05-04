@@ -1,0 +1,24 @@
+{
+  "description": "测试拓扑3 - 高度连接网络（环形拓扑）",
+  "routers": [
+    {"router_id": 1, "router_name": "Router-核心1", "listen_port": 10001, "listen_ip": "127.0.0.1"},
+    {"router_id": 2, "router_name": "Router-核心2", "listen_port": 10002, "listen_ip": "127.0.0.1"},
+    {"router_id": 3, "router_name": "Router-核心3", "listen_port": 10003, "listen_ip": "127.0.0.1"},
+    {"router_id": 4, "router_name": "Router-边缘1", "listen_port": 10004, "listen_ip": "127.0.0.1"},
+    {"router_id": 5, "router_name": "Router-边缘2", "listen_port": 10005, "listen_ip": "127.0.0.1"},
+    {"router_id": 6, "router_name": "Router-边缘3", "listen_port": 10006, "listen_ip": "127.0.0.1"},
+    {"router_id": 7, "router_name": "Router-边缘4", "listen_port": 10007, "listen_ip": "127.0.0.1"}
+  ],
+  "links": [
+    {"router1_id": 1, "router2_id": 2, "cost": 1},
+    {"router1_id": 2, "router2_id": 3, "cost": 1},
+    {"router1_id": 3, "router2_id": 1, "cost": 1},
+    {"router1_id": 1, "router2_id": 4, "cost": 5},
+    {"router1_id": 2, "router2_id": 5, "cost": 5},
+    {"router1_id": 3, "router2_id": 6, "cost": 5},
+    {"router1_id": 1, "router2_id": 7, "cost": 10},
+    {"router1_id": 4, "router2_id": 5, "cost": 8},
+    {"router1_id": 5, "router2_id": 6, "cost": 8},
+    {"router1_id": 6, "router2_id": 7, "cost": 8}
+  ]
+}

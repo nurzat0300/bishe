@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "E:\bishe\tests\run_tests.py", line 10, in <module>
+    from src.simulator import RoutingSimulator
+ModuleNotFoundError: No module named 'src'

@@ -1,0 +1,41 @@
+{
+  "routers": [
+    {"router_id": 1, "router_name": "Router1", "listen_port": 21001, "listen_ip": "127.0.0.1"},
+    {"router_id": 2, "router_name": "Router2", "listen_port": 21002, "listen_ip": "127.0.0.1"},
+    {"router_id": 3, "router_name": "Router3", "listen_port": 21003, "listen_ip": "127.0.0.1"},
+    {"router_id": 4, "router_name": "Router4", "listen_port": 21004, "listen_ip": "127.0.0.1"},
+    {"router_id": 5, "router_name": "Router5", "listen_port": 21005, "listen_ip": "127.0.0.1"},
+    {"router_id": 6, "router_name": "Router6", "listen_port": 21006, "listen_ip": "127.0.0.1"},
+    {"router_id": 7, "router_name": "Router7", "listen_port": 21007, "listen_ip": "127.0.0.1"},
+    {"router_id": 8, "router_name": "Router8", "listen_port": 21008, "listen_ip": "127.0.0.1"},
+    {"router_id": 9, "router_name": "Router9", "listen_port": 21009, "listen_ip": "127.0.0.1"},
+    {"router_id": 10, "router_name": "Router10", "listen_port": 21010, "listen_ip": "127.0.0.1"},
+    {"router_id": 11, "router_name": "Router11", "listen_port": 21011, "listen_ip": "127.0.0.1"},
+    {"router_id": 12, "router_name": "Router12", "listen_port": 21012, "listen_ip": "127.0.0.1"}
+  ],
+  "links": [
+    {"router1_id": 1, "router2_id": 2, "cost": 4},
+    {"router1_id": 1, "router2_id": 3, "cost": 8},
+    {"router1_id": 2, "router2_id": 3, "cost": 2},
+    {"router1_id": 2, "router2_id": 4, "cost": 5},
+    {"router1_id": 3, "router2_id": 5, "cost": 3},
+    {"router1_id": 4, "router2_id": 5, "cost": 1},
+    {"router1_id": 4, "router2_id": 6, "cost": 7},
+    {"router1_id": 5, "router2_id": 7, "cost": 4},
+    {"router1_id": 6, "router2_id": 7, "cost": 2},
+    {"router1_id": 6, "router2_id": 8, "cost": 6},
+    {"router1_id": 7, "router2_id": 9, "cost": 5},
+    {"router1_id": 8, "router2_id": 9, "cost": 1},
+    {"router1_id": 8, "router2_id": 10, "cost": 3},
+    {"router1_id": 9, "router2_id": 11, "cost": 4},
+    {"router1_id": 10, "router2_id": 11, "cost": 2},
+    {"router1_id": 10, "router2_id": 12, "cost": 6},
+    {"router1_id": 11, "router2_id": 12, "cost": 1},
+    {"router1_id": 1, "router2_id": 6, "cost": 12},
+    {"router1_id": 3, "router2_id": 8, "cost": 9},
+    {"router1_id": 2, "router2_id": 7, "cost": 10},
+    {"router1_id": 5, "router2_id": 10, "cost": 7},
+    {"router1_id": 4, "router2_id": 9, "cost": 8},
+    {"router1_id": 7, "router2_id": 12, "cost": 11}
+  ]
+}
